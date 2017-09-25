@@ -1,0 +1,130 @@
+[
+  {
+    "id": 0,
+    "name": "Colossal Head Morty",
+    "picture": "images/collosal-head-morty.png",
+    "age": 3,
+    "breed": "",
+    "location": "Lisco, Alabama"
+  },
+  {
+    "id": 1,
+    "name": "Exo-Omega Morty",
+    "picture": "images/exo-omega-morty.png",
+    "age": 3,
+    "breed": "",
+    "location": "Tooleville, West Virginia"
+  },
+  {
+    "id": 2,
+    "name": "Exoskeleton Morty",
+    "picture": "images/exoskeleton-morty.png",
+    "age": 2,
+    "breed": "",
+    "location": "Freeburn, Idaho"
+  },
+  {
+    "id": 3,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 2,
+    "breed": "",
+    "location": "Camas, Pennsylvania"
+  },
+  {
+    "id": 4,
+    "name": "Off The Grid Morty",
+    "picture": "images/off-the-grid-morty.png",
+    "age": 2,
+    "breed": "",
+    "location": "Gerber, South Dakota"
+  },
+  {
+    "id": 5,
+    "name": "Parasitic Morty",
+    "picture": "images/parasitic-morty.png",
+    "age": 3,
+    "breed": "",
+    "location": "Innsbrook, Illinois"
+  },
+  {
+    "id": 6,
+    "name": "Test X1 Morty",
+    "picture": "images/test-x1-morty.png",
+    "age": 3,
+    "breed": "",
+    "location": "Soudan, Louisiana"
+  },
+  {
+    "id": 7,
+    "name": "Veiny Morty",
+    "picture": "images/veiny-morty.png",
+    "age": 3,
+    "breed": "",
+    "location": "Jacksonwald, Palau"
+  },
+  {
+    "id": 8,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 2,
+    "breed": "",
+    "location": "Honolulu, Hawaii"
+  },
+  {
+    "id": 9,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 3,
+    "breed": "",
+    "location": "Matheny, Utah"
+  },
+  {
+    "id": 10,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 2,
+    "breed": "",
+    "location": "Tyhee, Indiana"
+  },
+  {
+    "id": 11,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 3,
+    "breed": "",
+    "location": "Windsor, Montana"
+  },
+  {
+    "id": 12,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 3,
+    "breed": "",
+    "location": "Kingstowne, Nevada"
+  },
+  {
+    "id": 13,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 4,
+    "breed": "",
+    "location": "Sultana, Massachusetts"
+  },
+  {
+    "id": 14,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 2,
+    "breed": "",
+    "location": "Broadlands, Oregon"
+  },
+  {
+    "id": 15,
+    "name": "Morty",
+    "picture": "images/morty.png",
+    "age": 2,
+    "breed": "",
+    "location": "Dawn, Wisconsin"
+  }
+]
