@@ -1,11 +1,11 @@
 [
   {
     "id": 0,
-    "name": "Colossal Head Morty",
-    "picture": "images/collosal-head-morty.png",
-    "age": 3,
+    "name": "Alices Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "age": "Soil",
     "breed": "",
-    "location": "Lisco, Alabama"
+    "location": 100
   },
   {
     "id": 1,
