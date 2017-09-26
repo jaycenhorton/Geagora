@@ -9,11 +9,11 @@ App = {
       var mortyTemplate = $('#mortyTemplate');
 
       for (i = 0; i < data.length; i ++) {
-        mortyTemplate.find('.panel-title').text(data[i].name);
+        mortyTemplate.find('.panel-title').text(data[i].provider);
         mortyTemplate.find('img').attr('src', data[i].picture);
-        // mortyTemplate.find('.morty-breed').text(data[i].breed);
-        // mortyTemplate.find('.morty-age').text(data[i].age);
-        // mortyTemplate.find('.morty-location').text(data[i].location);
+        mortyTemplate.find('.morty-type').text(data[i].type);
+        mortyTemplate.find('.morty-tons').text(data[i].tons);
+        mortyTemplate.find('.morty-location').text(data[i].location);
         mortyTemplate.find('.btn-adopt').attr('data-id', data[i].id);
 
         mortysRow.append(mortyTemplate.html());
@@ -92,7 +92,8 @@ App = {
     }).then(function(adopters) {
       for (i = 0; i < adopters.length; i++) {
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-morty').eq(i).find('button').text('Pending...').attr('disabled', true);
+          $('.panel-morty').eq(i).find('button').text('Retired').attr('disabled', true);
+          $('.panel-body').eq(i).append("<a href='#'>Who bought this?</a>");
         }
       }
     }).catch(function(err) {

@@ -1,130 +1,130 @@
 [
   {
     "id": 0,
-    "name": "Alices Soil Sequestration",
+    "provider": "Paul's Soil Sequestration",
     "picture": "images/soil.jpg",
-    "age": "Soil",
-    "breed": "",
-    "location": 100
+    "type": "Soil",
+    "location": "Seattle, WA",
+    "tons": 100
   },
   {
     "id": 1,
-    "name": "Exo-Omega Morty",
-    "picture": "images/exo-omega-morty.png",
-    "age": 3,
-    "breed": "",
-    "location": "Tooleville, West Virginia"
+    "provider": "Christophe's Oceanic Sequestration",
+    "picture": "images/ocean.jpg",
+    "type": "Oceanic",
+    "location": "New York, NY",
+    "tons": 56
   },
   {
     "id": 2,
-    "name": "Exoskeleton Morty",
-    "picture": "images/exoskeleton-morty.png",
-    "age": 2,
-    "breed": "",
-    "location": "Freeburn, Idaho"
+    "provider": "Jaycen's Solubility Sequestration",
+    "picture": "images/solubility.jpg",
+    "type": "Solubility Trapping",
+    "location": "Phoenix, AZ",
+    "tons": 42
   },
   {
     "id": 3,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 2,
-    "breed": "",
-    "location": "Camas, Pennsylvania"
+    "provider": "Alexsandra's Forestry Sequestration",
+    "picture": "images/forestry.jpg",
+    "type": "Forestry",
+    "location": "Los Angeles, CA",
+    "tons": 75
   },
   {
     "id": 4,
-    "name": "Off The Grid Morty",
-    "picture": "images/off-the-grid-morty.png",
-    "age": 2,
-    "breed": "",
-    "location": "Gerber, South Dakota"
+    "provider": "Zach's Mineral Sequestration",
+    "picture": "images/mineral.jpg",
+    "type": "Mineral Trapping",
+    "location": "Los Angeles, CA",
+    "tons": 101
   },
   {
     "id": 5,
-    "name": "Parasitic Morty",
-    "picture": "images/parasitic-morty.png",
-    "age": 3,
-    "breed": "",
-    "location": "Innsbrook, Illinois"
+    "provider": "Michael's Hydrodynamic Sequestration",
+    "picture": "images/hydrodynamic.jpg",
+    "type": "Hydrodynamic",
+    "location": "Los Angeles, CA",
+    "tons": 45
   },
   {
     "id": 6,
-    "name": "Test X1 Morty",
-    "picture": "images/test-x1-morty.png",
-    "age": 3,
-    "breed": "",
-    "location": "Soudan, Louisiana"
+    "provider": "Alice's Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "Los Angeles, CA",
+    "tons": 100
   },
   {
     "id": 7,
-    "name": "Veiny Morty",
-    "picture": "images/veiny-morty.png",
-    "age": 3,
-    "breed": "",
-    "location": "Jacksonwald, Palau"
+    "provider": "Bob's Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "Los Angeles, CA",
+    "tons": 10
   },
   {
     "id": 8,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 2,
-    "breed": "",
-    "location": "Honolulu, Hawaii"
+    "provider": "Carol's Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "",
+    "tons": 1
   },
   {
     "id": 9,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 3,
-    "breed": "",
-    "location": "Matheny, Utah"
+    "provider": "Alices Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "",
+    "tons": 100
   },
   {
     "id": 10,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 2,
-    "breed": "",
-    "location": "Tyhee, Indiana"
+    "provider": "Alices Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "",
+    "tons": 100
   },
   {
     "id": 11,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 3,
-    "breed": "",
-    "location": "Windsor, Montana"
+    "provider": "Alices Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "",
+    "tons": 100
   },
   {
     "id": 12,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 3,
-    "breed": "",
-    "location": "Kingstowne, Nevada"
+    "provider": "Alices Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "",
+    "tons": 100
   },
   {
     "id": 13,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 4,
-    "breed": "",
-    "location": "Sultana, Massachusetts"
+    "provider": "Alices Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "",
+    "tons": 100
   },
   {
     "id": 14,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 2,
-    "breed": "",
-    "location": "Broadlands, Oregon"
+    "provider": "Alices Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "",
+    "tons": 100
   },
   {
     "id": 15,
-    "name": "Morty",
-    "picture": "images/morty.png",
-    "age": 2,
-    "breed": "",
-    "location": "Dawn, Wisconsin"
+    "provider": "Alices Soil Sequestration",
+    "picture": "images/soil.jpg",
+    "type": "Soil",
+    "location": "",
+    "tons": 100
   }
 ]
