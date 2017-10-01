@@ -54,6 +54,7 @@ App = {
 
   bindEvents: function() {
     $(document).on('click', '.btn-adopt', App.handleAdopt);
+    $(document).on('click', '.btn-owner-info', App.getNECOwner);
   },
 
   handleAdopt: function() {
@@ -93,11 +94,41 @@ App = {
       for (i = 0; i < adopters.length; i++) {
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
           $('.panel-morty').eq(i).find('button').text('Retired').attr('disabled', true);
-          $('.panel-body').eq(i).append("<a href='#'>Who bought this?</a>");
+          $('.panel-body').eq(i).append(`<button type='button' class='btn-owner-info' data-id=${i} data-toggle='modal' data-target='#myModal'>Who bought this?</button>`);
         }
       }
     }).catch(function(err) {
       console.log(err.message);
+    });
+  },
+
+  getNECOwner: () => {
+    event.preventDefault();
+    
+    var mortyId = parseInt($(event.target).data('id'));
+
+    var adoptionInstance;
+    
+    web3.eth.getAccounts(function(error, accounts) {
+      if (error) {
+        console.log(error);
+      }
+    
+      var account = accounts[0];
+    
+      App.contracts.Adoption.deployed().then(function(instance) {
+        adoptionInstance = instance;
+    
+        return adoptionInstance.getAdopters.call();
+      }).then(function(result) {    
+        for (i = 0; i < result.length; i++) {
+          if (result[i] !== '0x0000000000000000000000000000000000000000') {
+            $('.NEC-buyer-info-body').text(`${result[mortyId]}`);
+          }
+        }
+      }).catch(function(err) {
+        console.log(err.message);
+      });
     });
   }
 
