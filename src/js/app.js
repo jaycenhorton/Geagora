@@ -123,7 +123,7 @@ App = {
       }).then(function(result) {    
         for (i = 0; i < result.length; i++) {
           if (result[i] !== '0x0000000000000000000000000000000000000000') {
-            $('.NEC-buyer-info-body').text(`${result[mortyId]}`);
+            $('.NEC-buyer-info-body').text(`This NEC was purchased by: ${result[mortyId]}`);
           }
         }
       }).catch(function(err) {
