@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <h1>FoodSafe</h1>
+
+    <br> <label for="contractAddress">Contract Address:</label> <input type="text" id="contractAddress" placeholder="Scan address or create a new contract"></input>
+    <br> <br>
+    <button id="createContract" onclick="App.createContract()">Create New Contract</button>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="./js/foodsafe.js"></script>
+
+</html>
