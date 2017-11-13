@@ -53,7 +53,7 @@ App = {
           return App.contracts.Crc.new (
             '',
             {from: account, data: data.unlinked_binary, gas: 3000000}
-            // (err, deployed) => {
+            // ,(err, deployed) => {
             //   console.log ('Error deploying contract');
             //   if (deployed.address) {
             //     document.getElementById ('contractAddress').value =

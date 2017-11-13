@@ -3,20 +3,20 @@ App = {
   contracts: {},
 
   init: function () {
-    // Load mortys.
-    $.getJSON ('../mortys.json', function (data) {
-      var mortysRow = $ ('#mortysRow');
-      var mortyTemplate = $ ('#mortyTemplate');
+    // Load crcs.
+    $.getJSON ('../crcs.json', function (data) {
+      var crcsRow = $ ('#crcsRow');
+      var crcTemplate = $ ('#crcTemplate');
 
       for (i = 0; i < data.length; i++) {
-        mortyTemplate.find ('.panel-title').text (data[i].provider);
-        mortyTemplate.find ('img').attr ('src', data[i].picture);
-        mortyTemplate.find ('.morty-type').text (data[i].type);
-        mortyTemplate.find ('.morty-tons').text (data[i].tons);
-        mortyTemplate.find ('.morty-location').text (data[i].location);
-        mortyTemplate.find ('.btn-adopt').attr ('data-id', data[i].id);
+        crcTemplate.find ('.panel-title').text (data[i].provider);
+        crcTemplate.find ('img').attr ('src', data[i].picture);
+        crcTemplate.find ('.crc-type').text (data[i].type);
+        crcTemplate.find ('.crc-tons').text (data[i].tons);
+        crcTemplate.find ('.crc-location').text (data[i].location);
+        crcTemplate.find ('.btn-adopt').attr ('data-id', data[i].id);
 
-        mortysRow.append (mortyTemplate.html ());
+        crcsRow.append (crcTemplate.html ());
       }
     });
 
@@ -47,7 +47,7 @@ App = {
       // Set the provider for our contract.
       App.contracts.Adoption.setProvider (App.web3Provider);
 
-      // Use our contract to retieve and mark the adopted mortys.
+      // Use our contract to retieve and mark the adopted crcs.
       return App.markAdopted ();
     });
   },
@@ -60,7 +60,7 @@ App = {
   handleAdopt: function () {
     event.preventDefault ();
 
-    var mortyId = parseInt ($ (event.target).data ('id'));
+    var crcId = parseInt ($ (event.target).data ('id'));
 
     var adoptionInstance;
 
@@ -76,7 +76,7 @@ App = {
         .then (function (instance) {
           adoptionInstance = instance;
 
-          return adoptionInstance.adopt (mortyId, {from: account});
+          return adoptionInstance.adopt (crcId, {from: account});
         })
         .then (function (result) {
           return App.markAdopted ();
@@ -100,7 +100,7 @@ App = {
       .then (function (adopters) {
         for (i = 0; i < adopters.length; i++) {
           if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-            $ ('.panel-morty')
+            $ ('.panel-crc')
               .eq (i)
               .find ('button')
               .text ('Retired')
@@ -121,7 +121,7 @@ App = {
   getNECOwner: () => {
     event.preventDefault ();
 
-    var mortyId = parseInt ($ (event.target).data ('id'));
+    var crcId = parseInt ($ (event.target).data ('id'));
 
     var adoptionInstance;
 
@@ -143,7 +143,7 @@ App = {
           for (i = 0; i < result.length; i++) {
             if (result[i] !== '0x0000000000000000000000000000000000000000') {
               $ ('.NEC-buyer-info-body').text (
-                `This NEC was purchased by: ${result[mortyId]}`
+                `This NEC was purchased by: ${result[crcId]}`
               );
             }
           }
